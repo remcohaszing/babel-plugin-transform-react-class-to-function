@@ -3,6 +3,7 @@
 > A Babel 7 plugin which transforms React component classes into functions
 
 [![build status][travis-image]][travis-url]
+[![codecov][codecov-image]][codecov-url]
 
 ## Example
 
@@ -113,5 +114,7 @@ This plugin solves that one for you. 😃
 This plugin was originally based on [babel-plugin-transform-react-pure-class-to-function]. However, the project has diverged a lot. You may want to git that project a try if you need to use babel 6.
 
 [babel-plugin-transform-react-pure-class-to-function]: https://www.npmjs.com/package/babel-plugin-transform-react-pure-class-to-function
+[codecov-image]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function
 [travis-image]: https://img.shields.io/travis/remcohaszing/spellcard-creator.svg
 [travis-url]: https://travis-ci.org/remcohaszing/spellcard-creator

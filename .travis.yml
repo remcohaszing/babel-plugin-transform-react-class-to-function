@@ -3,6 +3,8 @@ node_js:
   - '6'
   - '8'
   - '10'
+after_success:
+  - hash npx 2> /dev/null && npx codecov
 deploy:
   provider: npm
   email: remcohaszing@gmail.com
