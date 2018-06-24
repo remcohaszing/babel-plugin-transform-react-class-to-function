@@ -3,7 +3,16 @@
   "description": "A Babel 7 plugin which transforms React component classes into functions",
   "version": "1.0.0",
   "license": "MIT",
+  "homepage": "https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function#readme",
+  "author": "Remco Haszing <remcohaszing@gmail.com>",
   "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function.git"
+  },
+  "bugs": {
+    "url": "https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function/issues"
+  },
   "keywords": [
     "babel",
     "react"
