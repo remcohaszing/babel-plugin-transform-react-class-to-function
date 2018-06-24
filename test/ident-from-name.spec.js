@@ -14,7 +14,9 @@ const params = {
 
 
 describe('identFromFilename', () => {
-  Object.entries(params).forEach(([input, expected]) => {
+  Object.keys(params).forEach((input) => {
+    const expected = params[input];
+
     it(`should convert ${input} to ${expected}`, () => {
       const result = identFromFilename(input);
       assert.equal(result, expected);
