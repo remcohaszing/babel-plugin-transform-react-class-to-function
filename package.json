@@ -1,7 +1,7 @@
 {
   "name": "babel-plugin-transform-react-class-to-function",
   "description": "A Babel 7 plugin which transforms React component classes into functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function#readme",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
