@@ -2,6 +2,7 @@
 
 > A Babel 7 plugin which transforms React component classes into functions
 
+[![npm version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![codecov][codecov-image]][codecov-url]
 
@@ -116,5 +117,7 @@ This plugin was originally based on [babel-plugin-transform-react-pure-class-to-
 [babel-plugin-transform-react-pure-class-to-function]: https://www.npmjs.com/package/babel-plugin-transform-react-pure-class-to-function
 [codecov-image]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function
+[npm-image]: https://img.shields.io/npm/v/babel-plugin-transform-react-class-to-function.svg
+[npm-url]: https://www.npmjs.com/package/babel-plugin-transform-react-class-to-function
 [travis-image]: https://img.shields.io/travis/remcohaszing/spellcard-creator.svg
 [travis-url]: https://travis-ci.org/remcohaszing/spellcard-creator
