@@ -8,6 +8,4 @@ deploy:
   email: remcohaszing@gmail.com
   api_key: $NPM_ACCESS_TOKEN
   on:
-    branch: master
-    node: '10'
     tag: true
