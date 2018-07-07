@@ -83,13 +83,11 @@ npm install @babel/core babel-plugin-transform-react-class-to-function
 ### Via `babel.config.js` (Recommended)
 
 ```js
-module.exports = (api) => {
-  return {
-    plugins: [
-      'babel-plugin-transform-react-class-to-function',
-    ],
-  };
-};
+module.exports = (api) => ({
+  plugins: [
+    'babel-plugin-transform-react-class-to-function',
+  ],
+});
 ```
 
 ### Via CLI
