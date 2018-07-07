@@ -8,13 +8,13 @@
 
 Writing React components using the class syntax has several benefits:
 
-- **Consistency** — define all components using similar syntax
-- **Static properties** — components are more self contained when using static class properties
-- **Simpler diffs** — No need to change the entire indentation converting between classes and functions
+- **Consistency** — Define all components using similar syntax.
+- **Static properties** — Components are more self contained when using static class properties.
+- **Simpler diffs** — No need to change the entire indentation converting between classes and functions.
 
 There is one obvious downside:
 
-- **Size** — Class components are larger than function components
+- **Size** — Class components are larger than function components.
 
 This plugin solves that for you. 😃
 
