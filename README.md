@@ -6,6 +6,18 @@
 [![build status][travis-image]][travis-url]
 [![codecov][codecov-image]][codecov-url]
 
+Writing React components using the class syntax has several benefits:
+
+- **Consistency** — define all components using similar syntax
+- **Static properties** — components are more self contained when using static class properties
+- **Simpler diffs** — No need to change the entire indentation converting between classes and functions
+
+There is one obvious downside:
+
+- **Size** — Class components are larger than function components
+
+This plugin solves that for you. 😃
+
 ## Example
 
 ### In
@@ -95,20 +107,6 @@ require('@babel/core').transform(code, {
   ],
 });
 ```
-
-## Why
-
-Writing React components using the class syntax has several benefits:
-
-- **Consistency** — define all components using similar syntax
-- **Static properties** — components are more self contained when using static class properties
-- **Simpler diffs** — No need to change the entire indentation converting between classes and functions
-
-There is one obvious downside:
-
-- **Size** — Class components are larger than function components
-
-This plugin solves that one for you. 😃
 
 ## Special Thanks
 
