@@ -1,9 +1,9 @@
 import React from 'react';
 export default (() => {
-  const _Code2 = () => {
+  const _Code = () => {
     return null;
   };
 
-  _Code2.propTypes = {};
-  return _Code2;
+  _Code.propTypes = {};
+  return _Code;
 });
