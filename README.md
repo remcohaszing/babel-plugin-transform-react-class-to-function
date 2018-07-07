@@ -110,7 +110,7 @@ require('@babel/core').transform(code, {
 
 ## Special Thanks
 
-This plugin was originally based on [babel-plugin-transform-react-pure-class-to-function]. However, the project has diverged a lot. You may want to git that project a try if you need to use babel 6.
+This plugin was originally based on [babel-plugin-transform-react-pure-class-to-function]. However, the project has diverged a lot. You may want to give that project a try if you need to use babel 6.
 
 [babel-plugin-transform-react-pure-class-to-function]: https://www.npmjs.com/package/babel-plugin-transform-react-pure-class-to-function
 [codecov-image]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function/branch/master/graph/badge.svg
