@@ -115,5 +115,5 @@ This plugin was originally based on [babel-plugin-transform-react-pure-class-to-
 [codecov-url]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function
 [npm-image]: https://img.shields.io/npm/v/babel-plugin-transform-react-class-to-function.svg
 [npm-url]: https://www.npmjs.com/package/babel-plugin-transform-react-class-to-function
-[travis-image]: https://img.shields.io/travis/remcohaszing/spellcard-creator.svg
-[travis-url]: https://travis-ci.org/remcohaszing/spellcard-creator
+[travis-image]: https://img.shields.io/travis/remcohaszing/babel-plugin-transform-react-class-to-function.svg
+[travis-url]: https://travis-ci.org/remcohaszing/babel-plugin-transform-react-class-to-function
