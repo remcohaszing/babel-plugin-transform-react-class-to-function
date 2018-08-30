@@ -12,7 +12,7 @@ pluginTester({
     parserOpts: {
       plugins: [
         'classProperties',
-        'decorators',
+        ['decorators', { decoratorsBeforeExport: true }],
         'jsx',
       ],
     },
