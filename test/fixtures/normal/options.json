@@ -1,0 +1,9 @@
+{
+  "sourceType": "unambiguous",
+  "parserOpts": {
+    "plugins": [
+      "classProperties",
+      "jsx"
+    ]
+  }
+}
