@@ -24,6 +24,9 @@
     "start": "jest --watchAll",
     "test": "npm-run-all eslint jest"
   },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/helper-plugin-test-runner": "^7.1.0",
