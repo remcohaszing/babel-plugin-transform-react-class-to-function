@@ -1,3 +1,5 @@
 {
-  "plugins": ["../../../../lib"]
+  "plugins": [
+    ["../../../../lib", {"memo": true}]
+  ]
 }
