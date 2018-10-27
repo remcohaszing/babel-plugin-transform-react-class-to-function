@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Foo extends React.PureComponent {
+class Foo extends React.NotComponent {
   render() {
     return <div />;
   }

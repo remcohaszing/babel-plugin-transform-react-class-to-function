@@ -1,4 +1,5 @@
 const {
+  unused,
   Component
 } = require('react');
 
