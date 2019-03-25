@@ -11,4 +11,5 @@ deploy:
   email: remcohaszing@gmail.com
   api_key: $NPM_ACCESS_TOKEN
   on:
-    tag: true
+    tags: true
+    node: '10'
