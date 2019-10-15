@@ -25,7 +25,8 @@ npm start
 
 ## Testing
 
-All tests are based on fixtures in the *test/fixtures* directory. Given the code in *code.js*, expect it to be transformed into the code in *output.js*.
+All tests are based on fixtures in the _test/fixtures_ directory. Given the code in _code.js_,
+expect it to be transformed into the code in _output.js_.
 
 ## Committing
 
@@ -35,5 +36,4 @@ When adding changes, please keep them as small as possible. Only commit which is
 
 Also run `npm test` before making a commit.
 
-
-[GitHub]: https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function
+[github]: https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function

@@ -1,4 +1,3 @@
 import React from 'react';
 
-class BaseComponent extends React.Component {
-}
+class BaseComponent extends React.Component {}

@@ -2,15 +2,15 @@
 
 > A Babel 7 plugin which transforms React component classes into functions
 
-[![npm version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
+[![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
 [![codecov][codecov-image]][codecov-url]
 
 Writing React components using the class syntax has several benefits:
 
 - **Consistency** — Define all components using similar syntax.
 - **Static properties** — Components are more self contained when using static class properties.
-- **Simpler diffs** — No need to change the entire indentation converting between classes and functions.
+- **Simpler diffs** — No need to change the entire indentation converting between classes and
+  functions.
 
 There is one obvious downside:
 
@@ -26,22 +26,15 @@ This plugin solves that for you. 😃
 import PropTypes from 'prop-types';
 import React from 'react';
 
-
 export default class HelloWorld extends React.Component {
   static propTypes = {
     className: PropTypes.string,
-  }
+  };
 
   render() {
-    const {
-      className,
-    } = this.props;
+    const { className } = this.props;
 
-    return (
-      <div className={className}>
-        Hello world!
-      </div>
-    )
+    return <div className={className}>Hello world!</div>;
   }
 }
 ```
@@ -52,22 +45,13 @@ export default class HelloWorld extends React.Component {
 import PropTypes from 'prop-types';
 import React from 'react';
 
-
-const HelloWorld = ({
-  className,
-}) => {
-  return (
-    <div className={className}>
-      Hello world!
-    </div>
-  )
+const HelloWorld = ({ className }) => {
+  return <div className={className}>Hello world!</div>;
 };
-
 
 HelloWorld.propTypes = {
   className: PropTypes.string,
 };
-
 
 export default HelloWorld;
 ```
@@ -83,10 +67,8 @@ npm install @babel/core babel-plugin-transform-react-class-to-function
 ### Via `babel.config.js` (Recommended)
 
 ```js
-module.exports = (api) => ({
-  plugins: [
-    'babel-plugin-transform-react-class-to-function',
-  ],
+module.exports = api => ({
+  plugins: ['babel-plugin-transform-react-class-to-function'],
 });
 ```
 
@@ -100,9 +82,7 @@ babel --plugins babel-plugin-transform-react-class-to-function
 
 ```js
 require('@babel/core').transform(code, {
-  plugins: [
-    'babel-plugin-transform-react-class-to-function',
-  ],
+  plugins: ['babel-plugin-transform-react-class-to-function'],
 });
 ```
 
@@ -110,18 +90,24 @@ require('@babel/core').transform(code, {
 
 ### `memo`
 
-- `true`: Transform `PureComponent` and components implementing `shouldComponentUpdate` to functional components using [React memo].
-- `false` (default): Don’t transform `PureComponent` or components implementing `shouldComponentUpdate`.
+- `true`: Transform `PureComponent` and components implementing `shouldComponentUpdate` to
+  functional components using [React memo].
+- `false` (default): Don’t transform `PureComponent` or components implementing
+  `shouldComponentUpdate`.
 
 ## Special Thanks
 
-This plugin was originally based on [babel-plugin-transform-react-pure-class-to-function]. However, the project has diverged a lot. You may want to give that project a try if you need to use babel 6.
+This plugin was originally based on [babel-plugin-transform-react-pure-class-to-function]. However,
+the project has diverged a lot. You may want to give that project a try if you need to use babel 6.
 
-[babel-plugin-transform-react-pure-class-to-function]: https://www.npmjs.com/package/babel-plugin-transform-react-pure-class-to-function
-[codecov-image]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function/branch/master/graph/badge.svg
+[babel-plugin-transform-react-pure-class-to-function]:
+  https://www.npmjs.com/package/babel-plugin-transform-react-pure-class-to-function
+[codecov-image]:
+  https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function
 [npm-image]: https://img.shields.io/npm/v/babel-plugin-transform-react-class-to-function.svg
 [npm-url]: https://www.npmjs.com/package/babel-plugin-transform-react-class-to-function
 [react memo]: https://reactjs.org/docs/react-api.html#reactmemo
-[travis-image]: https://img.shields.io/travis/remcohaszing/babel-plugin-transform-react-class-to-function.svg
+[travis-image]:
+  https://img.shields.io/travis/remcohaszing/babel-plugin-transform-react-class-to-function.svg
 [travis-url]: https://travis-ci.org/remcohaszing/babel-plugin-transform-react-class-to-function

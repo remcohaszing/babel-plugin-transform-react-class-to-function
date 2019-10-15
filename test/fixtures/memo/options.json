@@ -1,9 +1,6 @@
 {
   "sourceType": "unambiguous",
   "parserOpts": {
-    "plugins": [
-      "classProperties",
-      "jsx"
-    ]
+    "plugins": ["classProperties", "jsx"]
   }
 }

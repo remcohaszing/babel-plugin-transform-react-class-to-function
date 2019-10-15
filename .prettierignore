@@ -1,0 +1,4 @@
+!.*
+/coverage
+output.mjs
+node_modules/

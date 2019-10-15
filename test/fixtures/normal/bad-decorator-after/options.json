@@ -1,10 +1,6 @@
 {
   "parserOpts": {
-    "plugins": [
-      "classProperties",
-      ["decorators", {"decoratorsBeforeExport": false}],
-      "jsx"
-    ]
+    "plugins": ["classProperties", ["decorators", { "decoratorsBeforeExport": false }], "jsx"]
   },
   "plugins": ["../../../../lib"]
 }
