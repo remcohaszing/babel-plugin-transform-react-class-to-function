@@ -32,6 +32,7 @@
     "@babel/core": "^7.6.4",
     "@babel/helper-plugin-test-runner": "^7.1.0",
     "babel-eslint": "^10.0.3",
+    "babel-plugin-transform-react-class-to-function": ".",
     "codecov": "^3.6.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",

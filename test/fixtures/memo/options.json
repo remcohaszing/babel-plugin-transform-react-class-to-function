@@ -2,5 +2,6 @@
   "sourceType": "unambiguous",
   "parserOpts": {
     "plugins": ["classProperties", "jsx"]
-  }
+  },
+  "plugins": [["babel-plugin-transform-react-class-to-function", { "memo": true }]]
 }
