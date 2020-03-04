@@ -26,21 +26,21 @@
     "test": "npm-run-all eslint jest prettier"
   },
   "dependencies": {
-    "@babel/helper-plugin-utils": "^7.0.0"
+    "@babel/helper-plugin-utils": "^7.8.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/helper-plugin-test-runner": "^7.1.0",
-    "babel-eslint": "^10.0.3",
+    "@babel/core": "^7.8.6",
+    "@babel/helper-plugin-test-runner": "^7.8.3",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-transform-react-class-to-function": ".",
-    "codecov": "^3.6.1",
-    "eslint": "^6.5.1",
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.4.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.1",
-    "jest": "^24.9.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1"
   }
 }
