@@ -1,4 +1,4 @@
-const { unused, Component } = require('react');
+const { Component, unused } = require('react');
 
 class Foo extends Component {
   render() {

@@ -22,11 +22,11 @@ This plugin solves that for you. 😃
 
 ### In
 
-```jsx
+```js
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export default class HelloWorld extends React.Component {
+export class HelloWorld extends React.Component {
   static propTypes = {
     className: PropTypes.string,
   };
@@ -41,19 +41,15 @@ export default class HelloWorld extends React.Component {
 
 ### Out
 
-```jsx
+```js
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const HelloWorld = ({ className }) => {
-  return <div className={className}>Hello world!</div>;
-};
+export const HelloWorld = ({ className }) => <div className={className}>Hello world!</div>;
 
 HelloWorld.propTypes = {
   className: PropTypes.string,
 };
-
-export default HelloWorld;
 ```
 
 ## Installation

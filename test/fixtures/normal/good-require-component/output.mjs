@@ -1,6 +1,6 @@
 const {
-  unused,
-  Component
+  Component,
+  unused
 } = require('react');
 
 const Foo = () => {

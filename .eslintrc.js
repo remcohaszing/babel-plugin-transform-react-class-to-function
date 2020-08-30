@@ -1,16 +1,49 @@
+const parserOptions = {
+  requireConfigFile: false,
+  babelOptions: {
+    parserOpts: {
+      plugins: ['classProperties', ['decorators', { decoratorsBeforeExport: true }], 'jsx'],
+    },
+  },
+};
+
 module.exports = {
-  extends: ['airbnb-base', 'plugin:prettier/recommended', 'prettier/react'],
+  extends: ['remcohaszing', 'remcohaszing/jest'],
+  ignorePatterns: ['output.mjs'],
+  rules: {
+    'capitalized-comments': 'off',
+    'new-cap': 'off',
+  },
   overrides: [
     {
       files: '**/fixtures/**',
-      parser: 'babel-eslint',
+      extends: ['remcohaszing/babel'],
+      parserOptions,
       rules: {
         'class-methods-use-this': 'off',
         'max-classes-per-file': 'off',
+        'no-empty-function': 'off',
         'no-unused-vars': 'off',
+        'no-undef': 'off',
+        'no-underscore-dangle': 'off',
+        'require-await': 'off',
 
+        'import/no-anonymous-default-export': 'off',
+        'import/no-commonjs': 'off',
+        'import/no-default-export': 'off',
         'import/no-unresolved': 'off',
-        'import/prefer-default-export': 'off',
+
+        'jsdoc/require-jsdoc': 'off',
+      },
+    },
+    {
+      files: '*.md/*.js',
+      extends: ['remcohaszing/babel'],
+      parserOptions,
+      rules: {
+        'no-undef': 'off',
+
+        'import/no-commonjs': 'off',
       },
     },
   ],

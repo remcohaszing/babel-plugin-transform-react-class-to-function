@@ -1,9 +1,8 @@
 language: node_js
 node_js:
-  - '6'
-  - '8'
   - '10'
-  - '11'
+  - '12'
+  - '14'
 after_success:
   - hash npx 2> /dev/null && npx codecov
 deploy:
