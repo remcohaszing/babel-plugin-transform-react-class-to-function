@@ -105,6 +105,6 @@ the project has diverged a lot. You may want to give that project a try if you n
 [npm-url]: https://www.npmjs.com/package/babel-plugin-transform-react-class-to-function
 [react memo]: https://reactjs.org/docs/react-api.html#reactmemo
 [github-actions-image]:
-  https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function/workflows/CI/badge.svg
+  https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function/workflows/ci/badge.svg
 [github-actions-url]:
   https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function/actions
