@@ -2,7 +2,7 @@
 
 > A Babel 7 plugin which transforms React component classes into functions
 
-[![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
+[![npm version][npm-image]][npm-url] [![build status][github-actions-image]][github-actions-url]
 [![codecov][codecov-image]][codecov-url]
 
 Writing React components using the class syntax has several benefits:
@@ -104,6 +104,7 @@ the project has diverged a lot. You may want to give that project a try if you n
 [npm-image]: https://img.shields.io/npm/v/babel-plugin-transform-react-class-to-function.svg
 [npm-url]: https://www.npmjs.com/package/babel-plugin-transform-react-class-to-function
 [react memo]: https://reactjs.org/docs/react-api.html#reactmemo
-[travis-image]:
-  https://img.shields.io/travis/remcohaszing/babel-plugin-transform-react-class-to-function.svg
-[travis-url]: https://travis-ci.org/remcohaszing/babel-plugin-transform-react-class-to-function
+[github-actions-image]:
+  https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function/workflows/CI/badge.svg
+[github-actions-url]:
+  https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function/actions

@@ -1,0 +1,59 @@
+name: ci
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: ESLint
+        run: |
+          npm ci
+          npx eslint .
+
+  jest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10, 12, 14]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Test
+        run: |
+          npm ci
+          npm test --coverage
+      - uses: codecov/codecov-action@v1
+        if: ${{ matrix.node-version == 14 }}
+
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Prettier
+        run: |
+          npm ci
+          npx prettier --check .
+
+  tsc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: TSC
+        run: |
+          npm ci
+          npx tsc
