@@ -21,6 +21,7 @@ module.exports = {
       parserOptions,
       rules: {
         'class-methods-use-this': 'off',
+        'id-denylist': 'off',
         'max-classes-per-file': 'off',
         'no-empty-function': 'off',
         'no-unused-vars': 'off',
@@ -34,6 +35,8 @@ module.exports = {
         'import/no-unresolved': 'off',
 
         'jsdoc/require-jsdoc': 'off',
+
+        'unicorn/import-style': 'off',
       },
     },
     {

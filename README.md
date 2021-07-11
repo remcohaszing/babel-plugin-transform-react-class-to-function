@@ -24,9 +24,9 @@ This plugin solves that for you. 😃
 
 ```js
 import PropTypes from 'prop-types';
-import React from 'react';
+import { Component } from 'react';
 
-export class HelloWorld extends React.Component {
+export class HelloWorld extends Component {
   static propTypes = {
     className: PropTypes.string,
   };
@@ -43,7 +43,7 @@ export class HelloWorld extends React.Component {
 
 ```js
 import PropTypes from 'prop-types';
-import React from 'react';
+import { Component } from 'react';
 
 export const HelloWorld = ({ className }) => <div className={className}>Hello world!</div>;
 
