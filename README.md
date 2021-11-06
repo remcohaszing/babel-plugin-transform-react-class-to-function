@@ -99,7 +99,7 @@ the project has diverged a lot. You may want to give that project a try if you n
 [babel-plugin-transform-react-pure-class-to-function]:
   https://www.npmjs.com/package/babel-plugin-transform-react-pure-class-to-function
 [codecov-image]:
-  https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function/branch/master/graph/badge.svg
+  https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function/branch/main/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/remcohaszing/babel-plugin-transform-react-class-to-function
 [npm-image]: https://img.shields.io/npm/v/babel-plugin-transform-react-class-to-function.svg
 [npm-url]: https://www.npmjs.com/package/babel-plugin-transform-react-class-to-function
