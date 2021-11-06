@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     'capitalized-comments': 'off',
     'new-cap': 'off',
+    'jest/require-hook': 'off',
   },
   overrides: [
     {
