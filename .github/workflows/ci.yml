@@ -1,59 +1,53 @@
 name: ci
 
 on:
-  - pull_request
-  - push
+  pull_request:
+  push:
+    branches: [main]
+    tags: ['*']
 
 jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: 14
-      - name: ESLint
-        run: |
-          npm ci
-          npx eslint .
+          node-version: 16
+      - run: npm ci
+      - run: npx eslint .
 
   jest:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10, 12, 14]
+        node-version: [10, 12, 14, 16]
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Test
-        run: |
-          npm ci
-          npm test --coverage
-      - uses: codecov/codecov-action@v1
-        if: ${{ matrix.node-version == 14 }}
+      - run: npm ci
+      - run: npx test --coverage
+      - uses: codecov/codecov-action@v2
+        if: ${{ matrix.node-version == 16 }}
 
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: 14
-      - name: Prettier
-        run: |
-          npm ci
-          npx prettier --check .
+          node-version: 16
+      - run: npm ci
+      - run: npx prettier --check .
 
   tsc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: 14
-      - name: TSC
-        run: |
-          npm ci
-          npx tsc
+          node-version: 16
+      - run: npm ci
+      - run: npx tsc
