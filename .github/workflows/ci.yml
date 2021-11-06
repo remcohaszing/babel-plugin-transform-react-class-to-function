@@ -29,7 +29,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install --global npm@8
       - run: npm ci
-      - run: npx test --coverage
+      - run: npx jest --coverage
       - uses: codecov/codecov-action@v2
         if: ${{ matrix.node-version == 16 }}
 
